@@ -1,27 +1,51 @@
-.homePG {
+/* .homePG {
     display: block;
     width: 100%;
     margin: 0;
     padding: 0;
+} */
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
 }
 
-.homePG img {
+.homePG {
     width: 100%;
-    margin-top:-20px;
+    margin-top:-24px;
+    /* margin:0 auto; */
+    background-image: url('images/shoeAD.jpg');
+    background-repeat: no-repeat;
+    min-height: 100%;
+    height: auto;
+    position: fixed;
+    top: 80;
+    left: 0;
+    background-size: cover
+
 }
+
+.logo  {
+    font-family: 'Comfortaa', cursive;
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
 
 .bg-primary {
     background: transparent !important;
     color: #000 !important;
+    border-bottom: 1px solid #ccc;
 }
 
 .navbar-dark .navbar-brand {
-    color: #000 !important;
+    color: #505050 !important;
 
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #000 !important;
+    color: #505050 !important;
 }
 
 /* NEW IMAGE FOR HAMBURGER ICON  */
@@ -31,3 +55,32 @@
 .navbar-dark .navbar-toggler-icon:hover {
     background-image: url('images/hamburger-icon-2.png');
 }
+
+.customYellow {
+
+}
+
+/* Click to Action on Home Page */
+.click-to-action {
+    margin-top:390px;
+    margin-left: 50px;
+    width: 40%;
+    background-color: yellow;
+    border-radius: 30px;
+    padding: 20px 30px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .click-to-action {
+      width: 80%;
+    }
+
+    .homePG {
+
+    }
+
+  }
+
+
+  button:focus {outline:0;}
